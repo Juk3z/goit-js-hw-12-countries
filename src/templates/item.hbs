@@ -1,11 +1,14 @@
 <li class="liItem">
+    <img class="flag" src="{{flag}}" alt="">
     <H1>{{name}}<H1>
-            <h2>Capital: {{capital}}</h2>
-            <h2>Population: {{population}}</h2>
-            <ul>
-                <h2>languages:</h2>
-                {{#each languages}}
-                <li>{{name}}</li> 
-                {{/each}}
-            </ul>
+    <h2>Capital: <span>{{capital}}</span></h2>
+    <h2>Population: <span>{{population}}</span></h2>
+    <ul class="ulItem">
+        <h2>languages:</h2>
+        {{#each languages}}
+        <li class="list-item">
+            <span>{{name}}</span>
+        </li> 
+        {{/each}}
+    </ul>
 </li>`
