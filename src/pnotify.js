@@ -6,7 +6,7 @@ import 'material-design-icons/iconfont/material-icons.css';
 
 defaults.styling = 'material';
 defaults.icons = 'material';
-defaults.delay = 500;
+defaults.delay = 1000;
 
 
 const { alert, notice, info, success, error } = require('@pnotify/core');
