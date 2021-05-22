@@ -27,7 +27,7 @@ function htmlBuilder(data) {
         
 };
 
-export { htmlBuilder, inputEl };
+export { htmlBuilder, inputEl, ulEl };
 
 
 

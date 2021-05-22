@@ -1,6 +1,6 @@
 import './sass/main.scss';
 import findCountries from './fetchCountries';
-import { htmlBuilder, inputEl } from './htmlBuilder';
+import { htmlBuilder, inputEl, ulEl } from './htmlBuilder';
 var debounce = require('lodash.debounce');
 
 
@@ -13,7 +13,7 @@ function inputHandler(e) {
     searchingName = e.target.value;
 
     if (!searchingName) {
-        inputEl.innerHTML = '';
+        ulEl.innerHTML = '';
         return
     };  
 
