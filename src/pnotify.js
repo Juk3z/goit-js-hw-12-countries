@@ -8,7 +8,6 @@ defaults.styling = 'material';
 defaults.icons = 'material';
 defaults.delay = 1000;
 
-
 const { alert, notice, info, success, error } = require('@pnotify/core');
 
 export default error;

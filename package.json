@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Juk3z.github.io/goit-js-hw-12-countries",
+  "homepage": "https://juk3z.github.io/goit-js-hw-12-countries",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Maiksim Karimov <juk3z1973@gmail.com>",
+  "author": "Maksim Karimov <juk3z1973@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
