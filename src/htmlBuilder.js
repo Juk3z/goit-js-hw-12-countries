@@ -8,6 +8,10 @@ const ulEl = document.querySelector('ul');
 
 
 function htmlBuilder(data) {
+    if (!data) {
+        return
+    };  
+
     if (data.length > 10) {
         ulEl.innerHTML = '';
         errorNotify('Слишком мало символов');
@@ -24,7 +28,6 @@ function htmlBuilder(data) {
         data.forEach(item => ulEl.innerHTML = itemTemplate(item));
         return;
     };
-        
 };
 
 export { htmlBuilder, inputEl, ulEl };
