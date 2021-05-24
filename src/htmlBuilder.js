@@ -8,13 +8,11 @@ const ulEl = document.querySelector('ul');
 
 function htmlBuilder(data) {
     if (data.length > 10) {
-        ulEl.innerHTML = '';
         errorNotify('Слишком мало символов');
         return;
     };
 
     if (data.length > 1) {
-        ulEl.innerHTML = '';
         data.forEach(item => ulEl.insertAdjacentHTML('beforeend', listTemplate(item)));
         return
     };
