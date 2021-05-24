@@ -11,16 +11,16 @@ inputEl.addEventListener('input', debounce(inputHandler, 500));
 function inputHandler(e) {
     let searchingName;
     searchingName = e.target.value;
+    const spaceChecker = searchingName.trim();
 
-    if (!searchingName) {
-        ulEl.innerHTML = '';
+    ulEl.innerHTML = '';
+    if (!searchingName || !spaceChecker) {
         return
     };  
 
     findCountries(searchingName)
     .then(htmlBuilder);
 };
-
 
 
 

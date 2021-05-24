@@ -6,12 +6,7 @@ import errorNotify from './pnotify.js';
 const inputEl = document.querySelector('input');
 const ulEl = document.querySelector('ul');
 
-
 function htmlBuilder(data) {
-    if (!data) {
-        return
-    };  
-
     if (data.length > 10) {
         ulEl.innerHTML = '';
         errorNotify('Слишком мало символов');
