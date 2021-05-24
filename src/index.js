@@ -10,11 +10,10 @@ inputEl.addEventListener('input', debounce(inputHandler, 500));
 
 function inputHandler(e) {
     let searchingName;
-    searchingName = e.target.value;
-    const spaceChecker = searchingName.trim();
+    searchingName = e.target.value.trim();
 
     ulEl.innerHTML = '';
-    if (!searchingName || !spaceChecker) {
+    if (!searchingName) {
         return
     };  
 
